@@ -1,0 +1,21 @@
+<ion-view title="Detalhes" hide-nav-bar="true" id="detalhes" class=" ">
+    <div ng-model="beer">
+        <ion-content padding="false" class="manual-ios-statusbar-padding">
+            <div style="margin: 0px; line-height: 250px; text-align: center; background-color: rgb(232, 235, 239);">
+            <img  ng-src="{{beer.imagem.url}}" height="50" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" />
+            </div>
+            <h2 id="detalhes-heading1" style="color:#000000;text-align:center;" class=" ">{{beer.nome}}</h2>
+            <div class="item item-body " id="detalhes-list-item-container1">
+                <p id="detalhes-markdown5" style="margin-top:0px;color:#000000;" class=" ">>Marca: {{beer.marca.nome}}</p>
+                <p id="detalhes-markdown5" style="margin-top:0px;color:#000000;" class=" ">>Cervejaria: {{beer.cervejaria.nome}}</p>
+                <p id="detalhes-markdown5" style="margin-top:0px;color:#000000;" class=" ">>Companhia: {{beer.companhia.nome}}</p>
+                <p id="detalhes-markdown5" style="margin-top:0px;color:#000000;" class=" ">>Volume: {{beer.volume.qtd}}</p>
+                <p id="detalhes-markdown5" style="margin-top:0px;color:#000000;" class=" ">>Familia: {{beer.familia.nome}}</p>
+                <p id="detalhes-markdown5" style="margin-top:0px;color:#000000;" class=" ">>Teor: {{beer.teor.qtd}}</p>
+                <p id="detalhes-markdown5" style="margin-top:0px;color:#000000;" class=" ">>SKU: {{beer.sku.nome}}</p>
+                <img ng-src="{{beer.origem.bandeira.url}}" height="10" width="10">
+
+            </div>
+        </ion-content>
+    </div>
+</ion-view>

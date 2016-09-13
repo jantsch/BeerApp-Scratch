@@ -1,0 +1,56 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser@~1.2.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "phonegap-facebook-plugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Wizcorp/phonegap-facebook-plugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "998512923560021",
+            "APP_NAME": "ThinkBeer"
+        }
+    },
+    "phonegap-plugin-barcodescanner": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phonegap/phonegap-plugin-barcodescanner.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-compat": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-compat"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-geolocation": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/apache/cordova-plugin-geolocation.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

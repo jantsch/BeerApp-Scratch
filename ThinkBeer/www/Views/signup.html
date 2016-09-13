@@ -1,0 +1,24 @@
+<ion-view title="Signup" hide-nav-bar="true" id="page8" class=" ">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <form id="signup-form3" class="list " ng-submit="onSignedIn(theForm.$valid)"  name="theForm" novalidate="novalidate">
+            <div class="spacer" style="width: 283px; height: 164px;"></div>
+            <ion-list id="signup-list2" class=" ">
+                <label class="item item-input item-floating-label " id="signup-input3">
+                    <span class="input-label">Email</span>
+                    <input type="email" placeholder="Email" required="required" name="email" ng-minlength="3" ng-model="formModel.email">
+                </label>
+                <label class="item item-input item-floating-label " id="signup-input4">
+                    <span class="input-label">Nome</span>
+                    <input type="text" placeholder="Nome" required="required"  ng-model="formModel.username">
+                </label>
+                <label class="item item-input item-floating-label " id="signup-input5">
+                    <span class="input-label">Password</span>
+                    <input type="text" placeholder="Password" required="required"  ng-model="formModel.password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="width: 283px; height: 8px;"></div>
+            <button id="signup-button7" class=" button button-energized  button-block" type="submit">Sign up</button>
+        </form>
+        <a ui-sref="login" id="signup-button8" class=" button button-positive  button-block ">Log In</a>
+    </ion-content>
+</ion-view>

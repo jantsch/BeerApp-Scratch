@@ -1,0 +1,23 @@
+<ion-view title="BeerPedia" hide-nav-bar="true" id="page2" class=" ">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <form id="beerPedia-form1" class="list ">
+            <label class="item item-input" name="search">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" ng-model="searchname" ng-change="newSearch(searchname)" placeholder="Busque">
+            </label>
+            <div ng-repeat="beer in beers">
+                <ion-item class="item-thumbnail-left  " id="cameraTabDefaultPage-list-item1" ng-click="openDetails(beer._id)">
+                    <img ng-src="{{beer.imagem.url}}">
+                    <h2>{{beer.nome}}</h2>
+                    <p>{{beer.marca.nome}}</p>
+                    <img ng-src="{{beer.origem.bandeira.url}}" height="10" width="10">
+                </ion-item>
+            </div>          
+        </form>  
+        <ion-infinite-scroll ng-if="shouldILoad()"
+                             icon="ion-loading-c"
+                             immediate-check="false"
+                             on-infinite="loadMore()">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
